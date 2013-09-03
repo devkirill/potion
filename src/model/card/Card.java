@@ -2,14 +2,21 @@ package model.card;
 
 /**
  * Created with IntelliJ IDEA.
- * User: Kirill Devyatkin
+ * User: uj643
  * Date: 20.08.13
  * Time: 17:02
  */
-public interface Card {
-    public void select();
+public abstract class Card extends Ingredient {
+    private Element element;
 
-    public void use();
+    public Card(String id, Element element) {
+        super(id);
+        this.element = element;
+    }
 
-    public boolean check();
+    public abstract void select();
+
+    public abstract void use();
+
+    public abstract boolean check();
 }

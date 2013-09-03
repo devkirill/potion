@@ -1,8 +1,13 @@
 package model.table;
 
+import model.card.Card;
+
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Created with IntelliJ IDEA.
- * User: Kirill Devyatkin
+ * User: uj643
  * Date: 20.08.13
  * Time: 17:02
  */
@@ -15,10 +20,13 @@ public class Hand {
 
     public Hand() {
         this.cards = new HashSet<Card>();
-
     }
 
     public void add(Card card) {
         cards.add(card);
+    }
+
+    public Iterable<Card> getCards() {
+        return cards;
     }
 }
