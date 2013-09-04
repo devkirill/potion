@@ -1,4 +1,4 @@
-package model.card.concrete.potions;
+package model.card.concrete.potions.simpleElexir;
 
 import model.card.Element;
 import model.card.Potion;
@@ -14,7 +14,11 @@ import model.card.concrete.elements.MandrakeRoot;
  */
 public class LivePotion extends Potion {
     public LivePotion(Element element) {
-        super("Live Potion", element,
-                new Recipe(new Class[]{BloodStone.class, MandrakeRoot.class}));
+        super(getName(), element,
+                new Recipe(new String[]{BloodStone.getName(), MandrakeRoot.getName()}));
+    }
+
+    public static String getName() {
+        return "Live Potion";
     }
 }

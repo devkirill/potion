@@ -25,6 +25,10 @@ public class Ingredient implements Identificable {
         this.ingredients.add(ingredient);
     }
 
+    public boolean containIngredient(String ingredient) {
+        return ingredients.contains(ingredient);
+    }
+
     public String getId() {
         return id;
     }

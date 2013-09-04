@@ -10,6 +10,10 @@ import model.card.Element;
  */
 public class MandrakeRoot extends Element {
     public MandrakeRoot() {
-        super("Mandrake Root");
+        super(getName());
+    }
+
+    public static String getName() {
+        return "Mandrake Root";
     }
 }

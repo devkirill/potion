@@ -10,6 +10,10 @@ import model.card.Element;
  */
 public class WellWater extends Element {
     public WellWater() {
-        super("Well Water");
+        super(getName());
+    }
+
+    public static String getName() {
+        return "Well Water";
     }
 }

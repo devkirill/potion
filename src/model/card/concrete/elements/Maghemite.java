@@ -10,6 +10,10 @@ import model.card.Element;
  */
 public class Maghemite extends Element {
     public Maghemite() {
-        super("Maghemite"); // TODO: реализовать магему
+        super(getName()); // TODO: реализовать магему
+    }
+
+    public static String getName() {
+        return "Maghemite";
     }
 }

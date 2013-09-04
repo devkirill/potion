@@ -10,6 +10,10 @@ import model.card.Element;
  */
 public class FieryLight extends Element {
     public FieryLight() {
-        super("Fiery Light");
+        super(getName());
+    }
+
+    public static String getName() {
+        return "Fiery Light";
     }
 }

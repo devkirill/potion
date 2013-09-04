@@ -10,6 +10,10 @@ import model.card.Element;
  */
 public class PhoenixFeather extends Element {
     public PhoenixFeather() {
-        super("Phoenix Feather");
+        super(getName());
+    }
+
+    public static String getName() {
+        return "Phoenix Feather";
     }
 }

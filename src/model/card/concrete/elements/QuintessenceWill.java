@@ -10,6 +10,10 @@ import model.card.Element;
  */
 public class QuintessenceWill extends Element {
     public QuintessenceWill() {
-        super("Quintessence of the Will");
+        super(getName());
+    }
+
+    public static String getName() {
+        return "Quintessence of the Will";
     }
 }

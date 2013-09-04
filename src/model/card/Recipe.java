@@ -11,17 +11,17 @@ import java.util.Collection;
  */
 public class Recipe {
 
-    private Collection<Class<? extends Ingredient>> ingredients;
+    private Collection<String> ingredients;
 
-    public Recipe(Collection<Class<? extends Ingredient>> ingredients) {
+    public Recipe(Collection<String> ingredients) {
         this.ingredients = ingredients;
     }
 
-    public Recipe(Class<? extends Ingredient>[] ingredients) {
+    public Recipe(String[] ingredients) {
         this(Arrays.asList(ingredients));
     }
 
-    public Collection<Class<? extends Ingredient>> getIngredients() {
+    public Collection<String> getIngredients() {
         return ingredients;
     }
 

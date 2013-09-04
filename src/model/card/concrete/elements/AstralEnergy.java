@@ -10,6 +10,10 @@ import model.card.Element;
  */
 public class AstralEnergy extends Element {
     public AstralEnergy() {
-        super("Astral Energy");
+        super(getName());
+    }
+
+    public static String getName() {
+        return "Astral Energy";
     }
 }

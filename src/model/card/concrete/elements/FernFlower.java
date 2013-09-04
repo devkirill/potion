@@ -10,6 +10,10 @@ import model.card.Element;
  */
 public class FernFlower extends Element {
     public FernFlower() {
-        super("Fern Flower");
+        super(getName());
+    }
+
+    public static String getName() {
+        return "Fern Flower";
     }
 }

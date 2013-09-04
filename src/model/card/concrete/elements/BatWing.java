@@ -10,6 +10,10 @@ import model.card.Element;
  */
 public class BatWing extends Element {
     public BatWing() {
-        super("Bat Wing");
+        super(getName());
+    }
+
+    public static String getName() {
+        return "Bat Wing";
     }
 }

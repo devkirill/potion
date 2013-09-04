@@ -2,8 +2,8 @@ package model.card.concrete.potions.greatElexir;
 
 import model.card.Element;
 import model.card.Recipe;
-import model.card.concrete.potions.ElexirOfLoyalty;
-import model.card.concrete.potions.LivePotion;
+import model.card.concrete.potions.simpleElexir.ElexirOfLoyalty;
+import model.card.concrete.potions.simpleElexir.LivePotion;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,7 +13,11 @@ import model.card.concrete.potions.LivePotion;
  */
 public class EternalLove extends GreatElexir {
     public EternalLove(Element element) {
-        super("the Great Elixir of Eternal Love", element,
-                new Recipe(new Class[]{LivePotion.class, ElexirOfLoyalty.class}));
+        super(getName(), element,
+                new Recipe(new String[]{LivePotion.getName(), ElexirOfLoyalty.getName()}));
+    }
+
+    public static String getName() {
+        return "the Great Elixir of Eternal Love";
     }
 }

@@ -10,6 +10,10 @@ import model.card.Element;
  */
 public class WavesEther extends Element {
     public WavesEther() {
-        super("Waves of Ether");
+        super(getName());
+    }
+
+    public static String getName() {
+        return "Waves of Ether";
     }
 }

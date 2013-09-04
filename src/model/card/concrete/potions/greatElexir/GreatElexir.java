@@ -13,6 +13,10 @@ import model.card.Recipe;
 public class GreatElexir extends Potion {
     public GreatElexir(String id, Element element, Recipe recipe) {
         super(id, element, recipe);
-        addIngredient("Great Elexir");
+        addIngredient(getName());
+    }
+
+    public static String getName() {
+        return "Great Elexir";
     }
 }

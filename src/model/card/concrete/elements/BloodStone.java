@@ -10,6 +10,10 @@ import model.card.Element;
  */
 public class BloodStone extends Element {
     public BloodStone() {
-        super("Blood Stone");
+        super(getName());
+    }
+
+    public static String getName() {
+        return "Blood Stone";
     }
 }

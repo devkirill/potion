@@ -10,6 +10,10 @@ import model.card.Element;
  */
 public class CrystalAir extends Element {
     public CrystalAir() {
-        super("Crystal Air");
+        super(getName());
+    }
+
+    public static String getName() {
+        return "Crystal Air";
     }
 }

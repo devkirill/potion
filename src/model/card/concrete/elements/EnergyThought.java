@@ -10,6 +10,10 @@ import model.card.Element;
  */
 public class EnergyThought extends Element {
     public EnergyThought() {
-        super("Energy of Thought");
+        super(getName());
+    }
+
+    public static String getName() {
+        return "Energy of Thought";
     }
 }

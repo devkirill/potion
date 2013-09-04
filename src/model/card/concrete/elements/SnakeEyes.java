@@ -10,6 +10,10 @@ import model.card.Element;
  */
 public class SnakeEyes extends Element {
     public SnakeEyes() {
-        super("Snake Eyes");
+        super(getName());
+    }
+
+    public static String getName() {
+        return "Snake Eyes";
     }
 }

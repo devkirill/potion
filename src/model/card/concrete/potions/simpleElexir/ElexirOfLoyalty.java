@@ -1,4 +1,4 @@
-package model.card.concrete.potions;
+package model.card.concrete.potions.simpleElexir;
 
 import model.card.Element;
 import model.card.Potion;
@@ -14,7 +14,11 @@ import model.card.concrete.elements.MandrakeRoot;
  */
 public class ElexirOfLoyalty extends Potion {
     public ElexirOfLoyalty(Element element) {
-        super("Elexir of Loyalty", element,
-                new Recipe(new Class[]{DragonTooth.class, MandrakeRoot.class}));
+        super(getName(), element,
+                new Recipe(new String[]{DragonTooth.getName(), MandrakeRoot.getName()}));
+    }
+
+    public static String getName() {
+        return "Elexir of Loyalty";
     }
 }
