@@ -14,6 +14,10 @@ public abstract class Card extends Ingredient {
         this.element = element;
     }
 
+    public Element getElement() {
+        return element;
+    }
+
     public abstract void select();
 
     public abstract void use();
