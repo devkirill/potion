@@ -10,7 +10,25 @@ import model.card.Element;
  */
 public class Maghemite extends Element {
     public Maghemite() {
-        super(getName()); // TODO: реализовать магему
+        // TODO: реализовать магему
+        super(getName(), new String[] {
+                AstralEnergy.getName(),
+                BatWing.getName(),
+                Belladonna.getName(),
+                BloodStone.getName(),
+                CrystalAir.getName(),
+                DragonTooth.getName(),
+                EnergyThought.getName(),
+                FernFlower.getName(),
+                FieryLight.getName(),
+                MandrakeRoot.getName(),
+                Mushrumy.getName(),
+                PhoenixFeather.getName(),
+                QuintessenceWill.getName(),
+                SnakeEyes.getName(),
+                WavesEther.getName(),
+                WellWater.getName(),
+        });
     }
 
     public static String getName() {
