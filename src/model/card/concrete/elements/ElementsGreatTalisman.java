@@ -11,10 +11,10 @@ import model.card.Element;
 public class ElementsGreatTalisman extends Element {
 
     public ElementsGreatTalisman() {
-        super(getName(), new String[] {
-            PhoenixFeather.getName(),
-            EnergyThought.getName(),
-            DragonTooth.getName(),
+        super(getName(), new String[]{
+                PhoenixFeather.getName(),
+                EnergyThought.getName(),
+                DragonTooth.getName(),
         });
     }
 

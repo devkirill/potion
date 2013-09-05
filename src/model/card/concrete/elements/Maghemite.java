@@ -11,7 +11,7 @@ import model.card.Element;
 public class Maghemite extends Element {
     public Maghemite() {
         // TODO: реализовать магему
-        super(getName(), new String[] {
+        super(getName(), new String[]{
                 AstralEnergy.getName(),
                 BatWing.getName(),
                 Belladonna.getName(),

@@ -11,10 +11,10 @@ import model.card.Element;
 public class ElementsSupremeElixir extends Element {
 
     public ElementsSupremeElixir() {
-        super(getName(), new String[] {
-            AstralEnergy.getName(),
-            QuintessenceWill.getName(),
-            WavesEther.getName(),
+        super(getName(), new String[]{
+                AstralEnergy.getName(),
+                QuintessenceWill.getName(),
+                WavesEther.getName(),
         });
     }
 
