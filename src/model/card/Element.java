@@ -10,6 +10,13 @@ import java.util.Collection;
  */
 public class Element extends Ingredient {
 
+    public Element(String id, String[] elements) {
+        super(id);
+        for (String element : elements) {
+            addIngredient(element);
+        }
+    }
+
     public Element(String id, Collection<String> elements) {
         super(id);
         for (String element : elements) {
