@@ -1,9 +1,7 @@
 package model.table;
 
-import model.card.Card;
-import model.card.Recipe;
+import model.player.Player;
 
-import java.util.ArrayList;
 import java.util.Collection;
 
 /**
@@ -14,19 +12,15 @@ import java.util.Collection;
  */
 public class Table {
 
-    private Collection<Card> cards;
-    private Collection<Recipe> recipes;
+    private Collection<Player> players;
+    private ElementsTable elementsTable;
 
-    public Table() {
-        this.cards = new ArrayList<Card>();
-        this.recipes = new ArrayList<Recipe>();
+    public Table(Collection<Player> players) {
+        this.players = players;
+        this.elementsTable = new ElementsTable();
     }
 
-    public Collection<Card> getCards() {
-        return cards;
-    }
-
-    public Collection<Recipe> getRecipes() {
-        return recipes;
+    public Iterable<Player> getPlayers() {
+        return players;
     }
 }
